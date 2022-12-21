@@ -8,10 +8,8 @@ public class Main {
 
         while(true) {
 
-            System.out.println("1. Bakiye öğrenmek için tuşlayınız");
-            System.out.println("2. Para yatırmak için tuşlayınız");
-            System.out.println("3. Para çekmek için tuşlayınız");
-            System.out.println("4. Hesaptan çıkmak için tuşlayınız");
+            System.out.println("1. Bakiye öğrenmek için tuşlayınız" + '\n' + "2. Para yatırmak için tuşlayınız" + '\n' +
+                "3. Para çekmek için tuşlayınız" + '\n' + "4. Hesaptan çıkmak için tuşlayınız");
 
             System.out.print("Yapmak istediğiniz işlemin numarasını giriniz: ");
             operation = s.nextInt();
