@@ -4,9 +4,16 @@ public class Company {
     private String airlineId;
     private String airlineName;
 
-    public Company(String airlineId, String airlineName) {
-        this.airlineId = airlineId;
-        this.airlineName = airlineName;
+    public Company() {
+        this.airlineId = "";
+        this.airlineName = "";
+    }
+
+    //constructor 02
+    public Company(String airlineID, String name) {
+        this.setAirlineId(airlineID);
+        this.setAirlineName(name);
+
     }
 
     public String getAirlineId() {
