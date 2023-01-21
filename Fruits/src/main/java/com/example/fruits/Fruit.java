@@ -1,5 +1,7 @@
 package com.example.fruits;
 
+import java.util.Objects;
+
 public class Fruit {
     private Integer number;
     private String name;
@@ -17,7 +19,7 @@ public class Fruit {
         return number;
     }
 
-    public void setNumber(java.lang.Integer number) {
+    public void setNumber(Integer number) {
         this.number = number;
     }
 
