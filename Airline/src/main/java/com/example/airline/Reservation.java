@@ -3,10 +3,9 @@ package com.example.airline;
 
 public class Reservation {
     private int reservationNumber;
-    private int numberOfPassengers;
-    private Passenger[] passengers; // = new Passenger[numberOfPassengers];
     private String flightNumber;
-    private String departureDate;
+    private int numberOfPassengers;
+    private Passenger[] passengers;
     private Seat[] reservedSeats;
 
     public Reservation(int reservationNumber, int numberOfPassengers, Passenger[] passenger, String flightNumber,
@@ -15,7 +14,6 @@ public class Reservation {
         this.numberOfPassengers = numberOfPassengers;
         this.passengers = passenger;
         this.flightNumber = flightNumber;
-        this.departureDate = departureDate;
         this.reservedSeats = reservedSeats;
     }
 
@@ -57,14 +55,6 @@ public class Reservation {
 
     public void setFlightNumber(String flightNumber) {
         this.flightNumber = flightNumber;
-    }
-
-    public String getDepartureDate() {
-        return departureDate;
-    }
-
-    public void setDepartureDate(String departureDate) {
-        this.departureDate = departureDate;
     }
 
     public Seat[] getReservedSeats() {
