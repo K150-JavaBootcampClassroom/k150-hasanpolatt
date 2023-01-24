@@ -1,13 +1,10 @@
 package com.example.rentcar;
 
-import java.util.Scanner;
-
-import com.example.rentcar.Customer;
-import com.example.rentcar.Company;
-import com.example.rentcar.Personal;
-
 
 public class Operations {
 
-
+    public void priceDay(int day){
+        int price = 100*day;
+        System.out.println("Kiralama ücreti = " + price);
+    }
 }

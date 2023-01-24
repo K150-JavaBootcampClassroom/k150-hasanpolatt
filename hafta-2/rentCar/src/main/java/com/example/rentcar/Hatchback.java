@@ -1,7 +1,15 @@
 package com.example.rentcar;
 
 public class Hatchback extends Car {
-    public Hatchback(String brand, String model, int modelYear, String color, int baggage) {
-        super(brand, model, modelYear, color, baggage);
+
+    public Hatchback(int modelYear, String model, String color, int baggage, int maxSpeed) {
+        super(modelYear, color, model, baggage, maxSpeed);
     }
+    private int monthly = 3000;
+
+    public void rentForMonth(int month){
+        int price = monthly*month;
+        System.out.println("Kiralama ücreti: " + price);
+    }
+
 }

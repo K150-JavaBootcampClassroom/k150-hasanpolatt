@@ -1,26 +1,18 @@
 package com.example.rentcar;
 
 public class Car {
-    private String brand;
-    private String model;
     private int modelYear;
+    private String model;
     private String color;
     private int baggage;
+    private int maxSpeed;
 
-    public Car(String brand, String model, int modelYear, String color, int baggage) {
-        this.brand = brand;
-        this.model = model;
+    public Car(int modelYear, String model, String color, int baggage, int maxSpeed) {
         this.modelYear = modelYear;
+        this.model = model;
         this.color = color;
         this.baggage = baggage;
-    }
-
-    public String getBrand() {
-        return brand;
-    }
-
-    public void setBrand(String brand) {
-        this.brand = brand;
+        this.maxSpeed = maxSpeed;
     }
 
     public int getModelYear() {
@@ -53,5 +45,18 @@ public class Car {
 
     public void setBaggage(int baggage) {
         this.baggage = baggage;
+    }
+
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public void priceDay(int day){
+        int price = 100*day;
+        System.out.println("Kiralama ücreti = " + price);
     }
 }
